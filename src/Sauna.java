@@ -3,4 +3,5 @@ public interface Sauna {
     public void addTemperature(int degrees);
     public double calculateDailyCost();
     public String getType();
+    public String toString();
 }

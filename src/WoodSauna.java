@@ -16,7 +16,7 @@ public class WoodSauna implements Sauna {
     @Override
     public String getType()
     {
-        return "wood";
+        return "Wood";
     }
 
     @Override
@@ -33,5 +33,10 @@ public class WoodSauna implements Sauna {
             }
         }
         return cost;
+    }
+
+    @Override
+    public String toString() {
+        return " "+getType()+": " + name + " " + calculateDailyCost() + "kr";
     }
 }

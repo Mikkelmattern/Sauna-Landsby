@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 
 public class ElectricSauna implements Sauna {
-    private String name;
-    private ArrayList<Integer> temperatures = new ArrayList<>();
+    private final String name;
+    private final ArrayList<Integer> temperatures = new ArrayList<>();
 
     ElectricSauna(String name) {
         this.name = name;
@@ -21,7 +21,7 @@ public class ElectricSauna implements Sauna {
 
     @Override
     public String getType() {
-        return "electric";
+        return "Electric";
     }
 
 
@@ -37,5 +37,10 @@ public class ElectricSauna implements Sauna {
             }
         }
         return cost;
+    }
+
+    @Override
+    public String toString() {
+        return " " +getType()+": " + name + " " + calculateDailyCost() + "kr";
     }
 }
