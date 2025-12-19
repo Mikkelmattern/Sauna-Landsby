@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class WoodSauna implements Sauna {
     private String name;
-    private ArrayList<Integer> temperatures;
+    private ArrayList<Integer> temperatures = new ArrayList<>();
 
     WoodSauna(String name) {
         this.name = name;

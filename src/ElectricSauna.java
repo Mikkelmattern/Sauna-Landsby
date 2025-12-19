@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class ElectricSauna implements Sauna {
     private String name;
-    private ArrayList<Integer> temperatures;
+    private ArrayList<Integer> temperatures = new ArrayList<>();
 
     ElectricSauna(String name) {
         this.name = name;
